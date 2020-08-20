@@ -25,7 +25,7 @@ end
  end
 
 def show
-  @stations = @property.stations
+  
 end
 
 def edit
