@@ -1,28 +1,28 @@
 <p><%= notice %></p>
 
 <p class = "container">
-<strong>物件名:</strong>
-<%= @property.name %>
+  <strong>物件名:</strong>
+  <%= @property.name %>
 </p>
 
 <p class = "container">
-<strong>賃料:</strong>
-<%= @property.rent %>円
+  <strong>賃料:</strong>
+  <%= @property.rent %>円
 </p>
 
 <p class = "container">
-<strong>住所:</strong>
-<%= @property.address %>
+  <strong>住所:</strong>
+  <%= @property.address %>
 </p>
 
 <p class = "container">
-<strong>築年数:</strong>
-<%= @property.age %>年
+  <strong>築年数:</strong>
+  <%= @property.age %>年
 </p>
 
 <p class = 'border'>
-<strong>備考:</strong>
-<%= @property.content %>
+  <strong>備考:</strong>
+  <%= @property.content %>
 </p>
 
 <% @tag_number = 1 %>
@@ -31,19 +31,18 @@
   <% @tag_number += 1 %>
 
     <p class = "container">
-    <strong>路線名:</strong>
-    <%= station.line_name %>
+      <strong>路線名:</strong>
+      <%= station.line_name %>
     </p>
     <p class = "container">
-    <strong>駅名:</strong>
-    <%= station.station_name %>
+      <strong>駅名:</strong>
+      <%= station.station_name %>
     </p>
 
     <p class = "container">
-    <strong>徒歩分数:</strong>
-    <%= station.minutes_on_foot %>分
+      <strong>徒歩分数:</strong>
+      <%= station.minutes_on_foot %>分
     </p>
-
 
 <% end %>
 

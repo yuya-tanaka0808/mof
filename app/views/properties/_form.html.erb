@@ -40,23 +40,22 @@
     <%= form.text_area :content %>
   </div>
 
-
   <% @tag_number = 1 %>
   <%= form.fields_for :stations do |station| %>
     <h2>最寄り駅<%= @tag_number %></h2>
     <% @tag_number += 1 %>
     <div class="line_name">
-    <%= station.label :路線名 %><br>
-    <%= station.text_field :line_name %>
-  </div>
-  <div class="station_name">
-    <%= station.label :駅名 %><br>
-    <%= station.text_field :station_name %>
-  </div>
-  <div class="minutes_on_foot">
-    <%= station.label :徒歩分数 %><br>
-    <%= station.text_field :minutes_on_foot %>分<br>
-  </div>
+      <%= station.label :路線名 %><br>
+      <%= station.text_field :line_name %>
+    </div>
+    <div class="station_name">
+      <%= station.label :駅名 %><br>
+      <%= station.text_field :station_name %>
+    </div>
+    <div class="minutes_on_foot">
+      <%= station.label :徒歩分数 %><br>
+      <%= station.text_field :minutes_on_foot %>分<br>
+    </div>
   <% end %>
   <br>
   <%= form.submit '登録する' %>
