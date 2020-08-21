@@ -3,4 +3,10 @@ class Property < ApplicationRecord
   has_many :stations, dependent: :destroy, inverse_of: :property
   #reject_all_blank関数でtrueが出たパラメータは、送信データから除外させていく。
   accepts_nested_attributes_for :stations, allow_destroy: true,reject_if: :all_blank
+
+  validates :name, presence: true
+  validates :rent, presence: true
+  validates :address, presence: true
+  validates :age, presence: true
+  validates :content, presence: true
 end
